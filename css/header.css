@@ -1,0 +1,169 @@
+.header {
+  background-color: #a1b7c8;
+  min-height: 60px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__contacts {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  padding: 30px 15px;
+  background-color: #a1b7cb;
+  color: #fff;
+}
+
+.header__logo {
+  width: 124px;
+}
+
+.contacts__item {
+  margin-bottom: 50px;
+}
+
+.contacts__item:last-child {
+  margin-bottom: 0;
+}
+
+.contacts__head {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+
+.contacts__head-social {
+  margin-bottom: 12px;
+}
+
+.contacts__link {
+  font-size: 16px;
+  line-height: 22px;
+  display: block;
+  font-weight: bold;
+}
+.contacts__link:hover {
+  color: #3B557D;
+  transition: .3s;
+}
+.social-list {
+  display: flex;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 18px;
+}
+
+.social-list__link {
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.social-svg {
+  fill: #fff;
+  transition: fill .3s ease-in-out;
+}
+.social-list__link--whatsup:hover {
+  fill: #48C857;
+}
+
+.social-list__link--instagram:hover {
+ fill: #bc2a8d;
+}
+
+.social-list__link--facebook:hover {
+  fill: #3b5998;
+}
+
+.social-list__link--telegram:hover {
+fill: #2FA6DC;
+}
+
+.header__contacts-burger {
+  display: block;
+  width: 27px;
+  height: 14px;
+  background-image: url(../images/menu.svg);
+}
+
+@media (min-width: 768px) {
+  .header {
+    min-height: 100px;
+    padding: 28px 0;
+  }
+
+  .header__logo {
+    width: 180px;
+  }
+
+  .header__contacts {
+    top: 101px;
+    padding: 40px;
+  }
+
+  .contacts__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts__item {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .header {
+    width: 240px;
+    padding: 50px 0;
+  }
+
+  .header__container {
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0 20px;
+  }
+
+  .header__contacts {
+    position: static;
+    display: block;
+    padding: 0;
+  }
+
+  .contacts__list {
+    flex-direction: column;
+  }
+
+  .contacts {
+    display: block;
+  }
+
+  .contacts__item:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  .header__contacts-burger {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    width: 355px;
+    padding-top: 60px;
+  }
+}

@@ -1,0 +1,130 @@
+.portfolio__title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #110303;
+  margin-bottom: 40px;
+}
+.portfolio__slider {
+  position: relative;
+  max-width: 290px;
+  margin: 0 auto;
+}
+.portfolio__arrow {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-image: url(../images/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 5;
+}
+.arrow-svg {
+  stroke: #110303;
+  fill: #110303;
+}
+.arrow-svg:hover {
+    stroke: #e45d14;
+  fill: #e45d14;
+  transition: all .5s ease;
+}
+.portfolio__arrow-left {
+  left: 0;
+}
+.portfolio__arrow-right {
+  right: 0;
+  transform: rotate(180deg);
+}
+.portfolio__arrow-disable {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.card {
+  box-sizing: border-box;
+  max-width: 252px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 14px;
+}
+.card__picture {
+  align-self: center;
+  width: 155px;
+  height: 92px;
+  padding: 5px 18px 12px;
+  background-image: url(../images/macbook.svg);
+  background-size: cover;
+  margin-bottom: 30px;
+}
+.card__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 23px;
+}
+.card__client {
+  line-height: 120%;
+}
+.card__date {
+  line-height: 140%;
+}
+.card__title {
+  font-weight: 600;
+  line-height: 120%;
+  font-size: 16px;
+}
+@media (max-width: 480px) {
+  .portfolio__slider {
+    max-width: 340px;
+  }
+  .portfolio__title {
+    font-size: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .portfolio__slider {
+    max-width: 688px;
+  }
+}
+@media (min-width: 992px) {
+  .portfolio__slider {
+    max-width: 690px;
+  }
+}
+@media (min-width: 1440px) {
+  .portfolio__title {
+    font-size: 50px;
+  }
+  .portfolio__slider {
+    min-width: 825px;
+  }
+  .card {
+    max-width: 366px;
+  }
+  .card__picture {
+    width: 213px;
+    height: 126px;
+    padding: 6px 26px 15px;
+  }
+  .card__date {
+    font-size: 16px;
+  }
+  .card__title {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1800px) {
+  .portfolio__slider {
+    min-width: 1000px;
+  }
+  .card {
+    max-width: 240px;
+  }
+
+}
